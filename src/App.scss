@@ -3,4 +3,7 @@
 .app {
   background: $block-main;
   color: $text-main;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }

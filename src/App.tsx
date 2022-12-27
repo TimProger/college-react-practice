@@ -1,14 +1,18 @@
 import React from 'react';
 import './App.scss';
-import {useTypedSelector} from "./hooks/useTypedSelector";
+import Container from "./components/Container";
+import { Routes, Route } from "react-router-dom";
+import Main from "./pages/Main";
 
 function App() {
 
-  const {products} = useTypedSelector(state => state.product)
-
   return (
     <div className="app">
-      {products && products.length > 0 && products.map(el=><p>{el.name}</p>)}
+      <Container>
+        <Routes>
+          <Route path={'/'} element={<Main />} />
+        </Routes>
+      </Container>
     </div>
   );
 }
