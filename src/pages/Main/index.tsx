@@ -26,7 +26,7 @@ const Main: React.FC = () => {
   const [page, setPage] = useState<number>(0)
 
   useEffect(()=>{
-    $api.get('products/total')
+    $api.get('products/total/')
       .then((res)=>{
         setPages(res.data.pageNum)
         setTotalCount(res.data.total)
@@ -39,7 +39,7 @@ const Main: React.FC = () => {
   },[])
 
   useEffect(()=>{
-    $api.get(`products?page=1`)
+    $api.get(`products/?page=1`)
       .then((res)=>{
         dispatch(setProducts(res.data))
       })
@@ -47,10 +47,9 @@ const Main: React.FC = () => {
 
   const changePage = (page: number) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    $api.get(`products?page=${page}`)
+    $api.get(`products/?page=${page}`)
       .then((res)=>{
-        setPages(Math.ceil(res.data.count_pages))
-        dispatch(setProducts(res.data.data))
+        dispatch(setProducts(res.data))
       })
   }
 

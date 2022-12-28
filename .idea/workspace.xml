@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d054a00-51d3-49b9-9aa6-ba90e9c2f897" name="Changes" comment="Пагинация">
+    <list default="true" id="3d054a00-51d3-49b9-9aa6-ba90e9c2f897" name="Changes" comment="Отрисовал фильтры">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Main/main.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/main.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,7 @@
       <workItem from="1672141689566" duration="6803000" />
       <workItem from="1672175829079" duration="9255000" />
       <workItem from="1672228763621" duration="1300000" />
-      <workItem from="1672238289866" duration="2594000" />
+      <workItem from="1672238289866" duration="2817000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1672040836838</created>
@@ -88,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672241350338</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Отрисовал фильтры">
+      <created>1672242263862</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672242263862</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +114,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="Пагинация" />
-    <option name="LAST_COMMIT_MESSAGE" value="Пагинация" />
+    <MESSAGE value="Отрисовал фильтры" />
+    <option name="LAST_COMMIT_MESSAGE" value="Отрисовал фильтры" />
   </component>
 </project>
