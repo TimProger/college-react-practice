@@ -10,62 +10,7 @@ interface IProductState {
 const initialState: IProductState = {
   isLoading: false,
   error: null,
-  products: [
-    {
-      name: 'bob'
-    },
-    {
-      name: 'tom'
-    },
-    {
-      name: 'tom'
-    },
-    {
-      name: 'tom'
-    },
-    {
-      name: 'tom'
-    },
-    {
-      name: 'tom'
-    },
-    {
-      name: 'tom'
-    },
-    {
-      name: 'tom'
-    },
-    {
-      name: 'tom'
-    },
-    {
-      name: 'tom'
-    },
-    {
-      name: 'tom'
-    },
-    {
-      name: 'tom'
-    },
-    {
-      name: 'tom'
-    },
-    {
-      name: 'tom'
-    },
-    {
-      name: 'tom'
-    },
-    {
-      name: 'tom'
-    },
-    {
-      name: 'tom'
-    },
-    {
-      name: 'tom'
-    }
-  ]
+  products: []
 }
 
 export const productSlice = createSlice({
