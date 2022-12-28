@@ -41,12 +41,19 @@
 
         &__option{
           font-weight: 400;
-          border-bottom: 1px solid #00000000;
 
-          &:hover{
-            cursor: pointer;
-            color: $block-sec;
-            border-bottom: 1px solid $block-sec;
+          & p{
+            border-bottom: 1px solid #00000000;
+
+            & span{
+              color: $text-sec;
+            }
+
+            &:hover{
+              cursor: pointer;
+              color: $block-sec;
+              border-bottom: 1px solid $block-sec;
+            }
           }
         }
       }

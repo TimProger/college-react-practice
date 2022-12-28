@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d054a00-51d3-49b9-9aa6-ba90e9c2f897" name="Changes" comment="init">
+    <list default="true" id="3d054a00-51d3-49b9-9aa6-ba90e9c2f897" name="Changes" comment="Пагинация">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Main/main.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/main.module.scss" afterDir="false" />
@@ -58,7 +58,7 @@
       <workItem from="1672141689566" duration="6803000" />
       <workItem from="1672175829079" duration="9255000" />
       <workItem from="1672228763621" duration="1300000" />
-      <workItem from="1672238289866" duration="1696000" />
+      <workItem from="1672238289866" duration="2594000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1672040836838</created>
@@ -81,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672229457984</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Пагинация">
+      <created>1672241350338</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672241350338</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +107,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="Пагинация" />
+    <option name="LAST_COMMIT_MESSAGE" value="Пагинация" />
   </component>
 </project>

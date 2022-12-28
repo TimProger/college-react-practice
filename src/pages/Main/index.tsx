@@ -7,9 +7,9 @@ import {setProducts} from "../../store/Slices/Product.slice";
 import {useAppDispatch} from "../../hooks/useTypedDispatch";
 
 interface IFilter {
-  title: string;
-  filters: {
-    title: string;
+  name: string;
+  items: {
+    name: string;
     id: number;
     count: number;
   }[]
@@ -34,7 +34,7 @@ const Main: React.FC = () => {
       })
     $api.get('filters')
       .then((res)=>{
-        setFilters(res.data)
+        setFilters(res.data.filters)
       })
   },[])
 
@@ -106,10 +106,11 @@ const Main: React.FC = () => {
         <div className={s.main__filters}>
           <div className={s.main__filters__filter}>
             {filters ? filters.map((el, index)=>{
+              if(!el.items) return
               return <div className={s.main__filters__filter__options}>
-                <h3>{el.title}</h3>
-                <div className={s.main__filters__filter__options__option}>{el.filters.map((el, index)=>{
-                  return <div onClick={()=>chooseFilter(el.id)}>{el.title}</div>
+                <h3>{el.name}</h3>
+                <div className={s.main__filters__filter__options__option}>{el.items.map((el, index)=>{
+                  return <p onClick={()=>chooseFilter(el.id)}>{el.name} {el.count && <span>({el.count})</span>}</p>
                 })}</div>
               </div>
             }) : 'Фильтры не найдены'}
